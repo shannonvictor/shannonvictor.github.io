@@ -122,7 +122,22 @@ h1, h2, h3 { letter-spacing: -0.02em; line-height: 1.25; }
   margin-bottom: 28px;
   box-shadow: var(--shadow);
   color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
+
+.headshot {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, .55);
+  box-shadow: 0 6px 20px rgba(20, 10, 45, .35);
+}
+
+.hero-text { min-width: 0; }
 
 .eyebrow {
   margin: 0 0 14px;
@@ -361,6 +376,9 @@ footer p { margin: 0; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .nav { justify-content: center; }
   .dates { white-space: normal; }
+  .hero-panel { flex-direction: column; text-align: center; gap: 20px; padding: 32px 24px; }
+  .headshot { width: 128px; height: 128px; }
+  .hero-panel .lede { margin-left: auto; margin-right: auto; }
 }
 
 /* ---- Print (so the page prints like a clean CV) ---- */
