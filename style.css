@@ -79,6 +79,7 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
 }
 .nav-links a:hover { color: var(--accent); text-decoration: none; }
+.nav-links a.active { color: var(--text); font-weight: 600; }
 
 /* ---- Layout ---- */
 main {
@@ -99,6 +100,35 @@ h1, h2, h3 { letter-spacing: -0.02em; line-height: 1.25; }
   font-size: clamp(2.2rem, 6vw, 3.1rem);
   margin: 0 0 20px;
 }
+
+/* ---- Interior page header ---- */
+.page { padding-top: 64px; }
+
+.page-title {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  margin: 0 0 8px;
+}
+
+.page-intro {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin: 0 0 40px;
+  max-width: 60ch;
+}
+
+.page-nav {
+  margin-top: 8px;
+  padding-top: 32px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+.page-nav a { color: var(--text-muted); }
+.page-nav a:hover { color: var(--accent); text-decoration: none; }
+.page-nav .spacer { flex: 1; }
 
 .lede {
   font-size: 1.12rem;
